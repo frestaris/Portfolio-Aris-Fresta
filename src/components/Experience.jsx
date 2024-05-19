@@ -19,7 +19,7 @@ const SkillItem = ({ skill, level }) => {
 
 const Experience = () => {
   return (
-    <section>
+    <section id="experience">
       <div className="container mt-5">
         <div className="text-center pb-5">
           <p>Explore My</p>

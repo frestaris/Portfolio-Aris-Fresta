@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const Projects = () => {
   return (
-    <div className="container mt-5">
+    <div id="projects" className="container mt-5">
       <div className="text-center pb-5">
         <p>Browse My Recent</p>
         <h1>Projects</h1>

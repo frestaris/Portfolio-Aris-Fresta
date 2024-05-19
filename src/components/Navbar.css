@@ -1,0 +1,14 @@
+.scroll-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.scroll-top-button:hover {
+  opacity: 0.6;
+}

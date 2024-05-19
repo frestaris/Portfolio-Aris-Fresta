@@ -4,7 +4,7 @@ import "./Hero.css";
 
 const Hero = () => {
   return (
-    <section className="container">
+    <section id="hero" className="container">
       <div className="row flex-lg-row-reverse header">
         <div className="col-10 col-sm-8 col-lg-6 text-center pt-5">
           <img

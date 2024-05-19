@@ -15,7 +15,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="container py-3 my-4">
+    <footer id="email" className="container py-3 my-4">
       {showModal && (
         <div className="modal-overlay">
           <Modal closeModal={closeModal} />

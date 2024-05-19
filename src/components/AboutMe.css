@@ -1,11 +1,11 @@
 .picture {
-  width: 450px;
-  height: 450px;
+  width: 350px;
+  height: 350px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .content {
   text-align: center;
-  padding: 1.5rem;
+  padding: 1rem;
   flex: 1;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 2rem;
