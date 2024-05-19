@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
+import "./Modal.css";
 
 const Modal = ({ closeModal }) => {
   const modalRef = useRef();
