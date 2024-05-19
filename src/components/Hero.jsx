@@ -45,12 +45,17 @@ const Hero = () => {
             <i
               className="bi bi-linkedin mx-4"
               style={{ fontSize: "50px", cursor: "pointer" }}
-              onClick="location.href='https://google.com/"
+              onClick={() =>
+                (window.location.href =
+                  "https://www.linkedin.com/in/aris-fresta-33a631100/")
+              }
             ></i>
             <i
               className="bi bi-facebook"
               style={{ fontSize: "50px", cursor: "pointer" }}
-              onClick="location.href='https://google.com/"
+              onClick={() =>
+                (window.location.href = "https://www.facebook.com")
+              }
             ></i>
           </div>
         </div>

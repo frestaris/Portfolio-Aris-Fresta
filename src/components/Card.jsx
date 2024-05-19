@@ -79,8 +79,11 @@ const Card = ({ id }) => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <div className="card-body">
-          <p className="card-text">
+        <div className="card-body text-center">
+          <a className="d-block fs-2" href="#">
+            Project Title
+          </a>
+          <p className="card-text pt-3">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
