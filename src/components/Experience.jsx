@@ -33,9 +33,9 @@ const Experience = () => {
                 <div className="d-flex flex-wrap justify-content-center">
                   <SkillItem skill="HTML" level="Experienced" />
                   <SkillItem skill="CSS" level="Experienced" />
-                  <SkillItem skill="JavaScript" level="Experienced" />
-                  <SkillItem skill="React" level="Experienced" />
-                  <SkillItem skill="Bootstrap" level="Experienced" />
+                  <SkillItem skill="JavaScript" level="Intermediate" />
+                  <SkillItem skill="React" level="Intermediate" />
+                  <SkillItem skill="Bootstrap" level="Intermediate" />
                 </div>
               </div>
             </div>
@@ -45,11 +45,11 @@ const Experience = () => {
               <h2 className="mb-4 text-center">BackEnd Development</h2>
               <div className="row">
                 <div className="d-flex flex-wrap justify-content-center">
-                  <SkillItem skill="Node.js" level="Experienced" />
-                  <SkillItem skill="Express" level="Experienced" />
-                  <SkillItem skill="MongoDB" level="Experienced" />
-                  <SkillItem skill="SQL" level="Experienced" />
-                  <SkillItem skill="Python" level="Experienced" />
+                  <SkillItem skill="Node.js" level="Intermediate" />
+                  <SkillItem skill="Express.js" level="Intermediate" />
+                  <SkillItem skill="Javascript" level="Intermediate" />
+                  <SkillItem skill="PostgreSQL" level="Basic" />
+                  <SkillItem skill="API management" level="Basic" />
                 </div>
               </div>
             </div>

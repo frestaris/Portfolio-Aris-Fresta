@@ -11,14 +11,14 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    <div className="container">
       <Navbar />
       <Hero />
       <AboutMe />
       <Experience />
       <Projects />
       <Footer />
-    </>
+    </div>
   );
 }
 

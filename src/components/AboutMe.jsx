@@ -4,9 +4,9 @@ import "./AboutMe.css";
 
 const AboutMe = () => {
   return (
-    <section className="container">
+    <section id="about-me">
       <div className="row g-lg-5">
-        <div id="about-me" className="text-center">
+        <div className="text-center">
           <p>Get To Know More</p>
           <h1>About Me</h1>
         </div>
@@ -26,7 +26,7 @@ const AboutMe = () => {
               <i className="bi bi-award" style={{ fontSize: "30px" }}></i>
               <h3>Experience</h3>
               <p>
-                2+ years <br />
+                1+ year <br />
                 Frontend Development
               </p>
             </div>
@@ -36,22 +36,22 @@ const AboutMe = () => {
                 style={{ fontSize: "30px" }}
               ></i>
               <h3>Education</h3>
-              <p>
-                B.Sc. Bachelors Degree
-                <br />
-                M.Sc. Masters Degree
-              </p>
+              <p>Diploma of IT</p>
             </div>
           </div>
         </div>
         <p className="text-center pt-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod illo,
-          quia rerum earum atque, incidunt blanditiis ullam explicabo iusto
-          veritatis molestiae minima. Autem qui amet cum inventore, dolorem
-          error fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Vitae omnis magnam quasi voluptatibus sapiente eum consectetur
-          perspiciatis enim similique quia quibusdam consequatur excepturi
-          assumenda, nulla, nam ad placeat esse eos.
+          With an Italian-Greek background, I have been living in Australia for
+          10 years now, where I have settled my own family. I have always had a
+          strong passion for web development. Although I haven't had
+          professional experience in the field yet, I have spent several years
+          dedicated to self-learning and developing foundational skills in web
+          development. Through online courses, tutorials, and personal projects,
+          I have acquired a solid understanding of HTML, CSS, and JavaScript. My
+          self- driven approach to learning, coupled with a natural aptitude for
+          grasping new concepts quickly, has equipped me with the ability to
+          adapt in new environments. I am ready to bring my skills and passion
+          to the next level and finally make it my profession.
         </p>
       </div>
 

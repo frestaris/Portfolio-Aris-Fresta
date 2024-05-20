@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ id }) => {
+const Card = ({ id, title, image, linkUrl }) => {
   return (
     <section>
       <div className="card">
@@ -33,25 +33,13 @@ const Card = ({ id }) => {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img
-                src="https://via.placeholder.com/150"
-                className="d-block w-100"
-                alt="Slide 1"
-              />
+              <img src={image[0]} className="d-block w-100" alt="Slide 1" />
             </div>
             <div className="carousel-item">
-              <img
-                src="https://via.placeholder.com/150"
-                className="d-block w-100"
-                alt="Slide 1"
-              />
+              <img src={image[1]} className="d-block w-100" alt="Slide 1" />
             </div>
             <div className="carousel-item">
-              <img
-                src="https://via.placeholder.com/150"
-                className="d-block w-100"
-                alt="Slide 1"
-              />
+              <img src={image[2]} className="d-block w-100" alt="Slide 1" />
             </div>
           </div>
           <button
@@ -80,13 +68,12 @@ const Card = ({ id }) => {
           </button>
         </div>
         <div className="card-body text-center">
-          <a className="d-block fs-2" href="#">
-            Project Title
+          <h2 className="d-block fs-2" href="#">
+            {title}
+          </h2>
+          <a className="btn w-100 btn-dark mt-3" href={linkUrl}>
+            Check the {"< >"}
           </a>
-          <p className="card-text pt-3">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
         </div>
       </div>
     </section>

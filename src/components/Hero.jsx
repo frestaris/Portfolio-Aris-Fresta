@@ -1,8 +1,18 @@
 import React from "react";
 import profile from "../assets/profile-pic.jpg";
+import pdfFile from "../assets/Resume_ArisFresta_.pdf";
 import "./Hero.css";
 
 const Hero = () => {
+  //downloadable CV
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = pdfFile;
+    link.download = "Aris_Fresta_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <section id="hero" className="container">
       <div className="row flex-lg-row-reverse header">
@@ -25,26 +35,21 @@ const Hero = () => {
           <button
             type="button"
             className="btn btn-dark btn-lg px-4 me-md-2 rounded-pill"
+            onClick={handleDownloadCV} // Call handleDownloadCV function when the button is clicked
           >
             Download CV
-          </button>
-          <button
-            type="button"
-            className="btn btn-outline-secondary btn-lg px-4 rounded-pill"
-          >
-            Info
           </button>
           <div className="text-center">
             <i
               className="bi bi-github"
-              style={{ fontSize: "50px", cursor: "pointer" }}
+              style={{ fontSize: "35px", cursor: "pointer" }}
               onClick={() =>
                 (window.location.href = "https://github.com/frestaris")
               }
             ></i>
             <i
               className="bi bi-linkedin mx-4"
-              style={{ fontSize: "50px", cursor: "pointer" }}
+              style={{ fontSize: "35px", cursor: "pointer" }}
               onClick={() =>
                 (window.location.href =
                   "https://www.linkedin.com/in/aris-fresta-33a631100/")
@@ -52,7 +57,7 @@ const Hero = () => {
             ></i>
             <i
               className="bi bi-facebook"
-              style={{ fontSize: "50px", cursor: "pointer" }}
+              style={{ fontSize: "35px", cursor: "pointer" }}
               onClick={() =>
                 (window.location.href = "https://www.facebook.com")
               }
