@@ -1,6 +1,10 @@
 import React from "react";
 import profile from "../assets/profile-pic.jpg";
 import pdfFile from "../assets/Resume_ArisFresta_.pdf";
+import facebook from "../assets/facebook.png"; // Social media icons
+import linkedin from "../assets/linkedin.png";
+import github from "../assets/github.png";
+
 import "./Hero.css";
 
 const Hero = () => {
@@ -13,6 +17,7 @@ const Hero = () => {
     link.click();
     document.body.removeChild(link);
   };
+
   return (
     <section id="hero" className="container">
       <div className="row flex-lg-row-reverse header">
@@ -20,7 +25,7 @@ const Hero = () => {
           <img
             src={profile}
             className="mx-lg-auto img-fluid rounded-circle profile-pic"
-            alt="Bootstrap Themes"
+            alt="Profile"
             loading="lazy"
           />
         </div>
@@ -39,29 +44,33 @@ const Hero = () => {
           >
             Download CV
           </button>
-          <div className="text-center">
-            <i
-              className="bi bi-github"
-              style={{ fontSize: "35px", cursor: "pointer" }}
+
+          <div className="social-icons text-center mt-4">
+            <img
+              src={github}
+              alt="GitHub"
+              style={{ width: "35px", cursor: "pointer", marginRight: "15px" }}
               onClick={() =>
                 (window.location.href = "https://github.com/frestaris")
               }
-            ></i>
-            <i
-              className="bi bi-linkedin mx-4"
-              style={{ fontSize: "35px", cursor: "pointer" }}
+            />
+            <img
+              src={linkedin}
+              alt="LinkedIn"
+              style={{ width: "35px", cursor: "pointer", marginRight: "15px" }}
               onClick={() =>
                 (window.location.href =
                   "https://www.linkedin.com/in/aris-fresta-33a631100/")
               }
-            ></i>
-            <i
-              className="bi bi-facebook"
-              style={{ fontSize: "35px", cursor: "pointer" }}
+            />
+            <img
+              src={facebook}
+              alt="Facebook"
+              style={{ width: "35px", cursor: "pointer" }}
               onClick={() =>
                 (window.location.href = "https://www.facebook.com")
               }
-            ></i>
+            />
           </div>
         </div>
       </div>

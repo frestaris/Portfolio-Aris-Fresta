@@ -1,6 +1,22 @@
-.card {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+.skill-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s ease-in-out;
   border-radius: 2rem;
-  padding: 1rem;
-  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.skill-item:hover {
+  scale: 1.1;
+}
+.skill-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-image {
+  height: 63px;
+  width: 63px;
+}
+.title {
+  color: lightslategray;
 }

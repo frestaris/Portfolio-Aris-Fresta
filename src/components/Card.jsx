@@ -1,9 +1,9 @@
 import React from "react";
 
-const Card = ({ id, title, image, linkUrl }) => {
+const Card = ({ id, title, image, linkUrl, live, className }) => {
   return (
     <section>
-      <div className="card">
+      <div className={`card ${className}`}>
         <div
           id={`carouselExampleIndicators${id}`}
           className="carousel slide"
@@ -71,9 +71,14 @@ const Card = ({ id, title, image, linkUrl }) => {
           <h2 className="d-block fs-2" href="#">
             {title}
           </h2>
-          <a className="btn w-100 btn-dark mt-3" href={linkUrl}>
-            Check the {"< >"}
-          </a>
+          <div className="d-flex justify-content-between mt-3">
+            <a className="btn btn-dark me-2" href={linkUrl}>
+              {"<"}Code{"/>"}
+            </a>
+            <a className="btn btn-dark flex-fill" href={live}>
+              Live
+            </a>
+          </div>
         </div>
       </div>
     </section>

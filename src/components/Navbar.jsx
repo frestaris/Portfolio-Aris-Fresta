@@ -2,11 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
-  //
-  // Button top scroller
-  //
   const [activeSection, setActiveSection] = useState("about-me");
   const [showScrollTopButton, setShowScrollTopButton] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false); // State to manage nav open/closed
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,16 +25,21 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  //
-  // Scrolling behavior
-  //
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      const navbarHeight = document.querySelector(".navbar").offsetHeight; // Get the height of the navbar
-      const offset = 10; // Additional offset to show the section a bit higher
-      const targetScrollPosition = section.offsetTop - navbarHeight - offset;
+      const navbarHeight = document.querySelector(".navbar").offsetHeight;
+      const offset = 10;
+
+      // Check if hamburger menu is visible by detecting screen width
+      const isHamburgerVisible = window.innerWidth < 768; // You can adjust this value to match your CSS breakpoint
+
+      // Scroll position logic
+      const additionalOffset = isHamburgerVisible ? -200 : 0; // Add 50px when the hamburger is visible
+      const targetScrollPosition =
+        section.offsetTop - navbarHeight - offset - additionalOffset;
+
       window.scrollTo({ top: targetScrollPosition, behavior: "smooth" });
     } else {
       console.log("Section not found:", sectionId);
@@ -46,6 +49,14 @@ const Navbar = () => {
   const handleNavItemClick = (sectionId, event) => {
     event.preventDefault();
     scrollToSection(sectionId);
+    setIsNavOpen(false);
+  };
+
+  const iconMapping = {
+    "about-me": "bi bi-person-fill",
+    skills: "bi bi-star-fill",
+    projects: "bi bi-folder-fill",
+    email: "bi bi-envelope-fill",
   };
 
   return (
@@ -55,55 +66,36 @@ const Navbar = () => {
           <a className="navbar-brand" href="/">
             Aris's Portfolio
           </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+          <div
+            className={`ham-menu ${isNavOpen ? "open" : ""}`}
+            onClick={() => setIsNavOpen((prev) => !prev)}
           >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+          </div>
+          <div
+            className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`}
+            id="navbarSupportedContent"
+          >
             <ul className="navbar-nav ms-auto mb-2 mb-md-0">
-              <li className="nav-item">
-                <a
-                  href="#"
-                  className="nav-link"
-                  onClick={(event) => handleNavItemClick("about-me", event)}
-                >
-                  About Me
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  href="#"
-                  className="nav-link"
-                  onClick={(event) => handleNavItemClick("experience", event)}
-                >
-                  Experiences
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  href="#"
-                  className="nav-link"
-                  onClick={(event) => handleNavItemClick("projects", event)}
-                >
-                  Projects
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  href="#"
-                  className="nav-link"
-                  onClick={(event) => handleNavItemClick("email", event)}
-                >
-                  Get in Touch
-                </a>
-              </li>
+              {["about-me", "skills", "projects", "email"].map((section) => (
+                <li className="nav-item" key={section}>
+                  <a
+                    href="#"
+                    className="nav-link"
+                    onClick={(event) => handleNavItemClick(section, event)}
+                  >
+                    <i
+                      className={iconMapping[section]}
+                      style={{ fontSize: "20px", marginRight: "5px" }}
+                    ></i>
+                    {section
+                      .replace("-", " ")
+                      .replace(/^\w/, (c) => c.toUpperCase())}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

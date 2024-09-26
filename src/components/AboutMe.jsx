@@ -40,7 +40,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-        <p className="text-center pt-2">
+        <p className="text-center pt-4">
           With an Italian-Greek background, I have been living in Australia for
           10 years now, where I have settled my own family. I have always had a
           strong passion for web development. Although I haven't had

@@ -61,9 +61,9 @@ const Footer = () => {
           <a
             href="#"
             className="nav-link px-2 text-body-secondary"
-            onClick={(event) => handleFooterNavItemClick("experience", event)}
+            onClick={(event) => handleFooterNavItemClick("skills", event)}
           >
-            Experience
+            Skills
           </a>
         </li>
         <li className="nav-item">

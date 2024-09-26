@@ -1,3 +1,8 @@
+body {
+  background-color: #f5efff;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
 .picture {
   width: 350px;
   height: 350px;
