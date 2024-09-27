@@ -1,3 +1,6 @@
+.navbar {
+  background-color: #e5e5e5 !important;
+}
 .scroll-top-button {
   position: fixed;
   bottom: 20px;
@@ -30,6 +33,7 @@
   background-color: #5d5d5d;
   margin-bottom: 5px;
   transition: transform 0.3s, opacity 0.3s;
+  border-radius: 50px;
 }
 
 .ham-menu.open .bar:nth-child(1) {

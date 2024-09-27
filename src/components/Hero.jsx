@@ -1,14 +1,13 @@
 import React from "react";
 import profile from "../assets/profile-pic.jpg";
 import pdfFile from "../assets/Resume_ArisFresta_.pdf";
-import facebook from "../assets/facebook.png"; // Social media icons
+import facebook from "../assets/facebook.png";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 
 import "./Hero.css";
 
 const Hero = () => {
-  //downloadable CV
   const handleDownloadCV = () => {
     const link = document.createElement("a");
     link.href = pdfFile;
@@ -40,7 +39,7 @@ const Hero = () => {
           <button
             type="button"
             className="btn btn-dark btn-lg px-4 me-md-2 rounded-pill"
-            onClick={handleDownloadCV} // Call handleDownloadCV function when the button is clicked
+            onClick={handleDownloadCV}
           >
             Download CV
           </button>

@@ -17,8 +17,8 @@ const Footer = () => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      const navbarHeight = document.querySelector(".navbar").offsetHeight; // Get the height of the navbar
-      const offset = 10; // Additional offset to show the section a bit higher
+      const navbarHeight = document.querySelector(".navbar").offsetHeight;
+      const offset = 10;
       const targetScrollPosition = section.offsetTop - navbarHeight - offset;
       window.scrollTo({ top: targetScrollPosition, behavior: "smooth" });
     } else {
@@ -32,7 +32,7 @@ const Footer = () => {
   };
 
   return (
-    <footer id="email" className="container py-3 my-4">
+    <footer id="email" className="container my-4">
       {showModal && (
         <div className="modal-overlay">
           <Modal closeModal={closeModal} />
@@ -76,7 +76,9 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      <p className="text-center text-body-secondary">© {currentYear} Aris</p>
+      <p className="text-center text-body-secondary">
+        Copyright © {currentYear} Aris
+      </p>
     </footer>
   );
 };

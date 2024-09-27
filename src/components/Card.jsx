@@ -75,8 +75,8 @@ const Card = ({ id, title, image, linkUrl, live, className }) => {
             <a className="btn btn-dark me-2" href={linkUrl}>
               {"<"}Code{"/>"}
             </a>
-            <a className="btn btn-dark flex-fill" href={live}>
-              Live
+            <a className="btn btn-success flex-fill" href={live}>
+              <i className="bi bi-play-fill"></i> Live
             </a>
           </div>
         </div>

@@ -4,7 +4,7 @@ import "./Navbar.css";
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("about-me");
   const [showScrollTopButton, setShowScrollTopButton] = useState(false);
-  const [isNavOpen, setIsNavOpen] = useState(false); // State to manage nav open/closed
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,11 +32,9 @@ const Navbar = () => {
       const navbarHeight = document.querySelector(".navbar").offsetHeight;
       const offset = 10;
 
-      // Check if hamburger menu is visible by detecting screen width
-      const isHamburgerVisible = window.innerWidth < 768; // You can adjust this value to match your CSS breakpoint
+      const isHamburgerVisible = window.innerWidth < 768;
 
-      // Scroll position logic
-      const additionalOffset = isHamburgerVisible ? -200 : 0; // Add 50px when the hamburger is visible
+      const additionalOffset = isHamburgerVisible ? -200 : 0;
       const targetScrollPosition =
         section.offsetTop - navbarHeight - offset - additionalOffset;
 
@@ -50,6 +48,13 @@ const Navbar = () => {
     event.preventDefault();
     scrollToSection(sectionId);
     setIsNavOpen(false);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   const iconMapping = {
@@ -101,10 +106,7 @@ const Navbar = () => {
         </div>
       </nav>
       {showScrollTopButton && (
-        <button
-          className="scroll-top-button"
-          onClick={(event) => handleNavItemClick("hero", event)}
-        >
+        <button className="scroll-top-button" onClick={scrollToTop}>
           <i className="bi bi-arrow-up-short" style={{ fontSize: "30px" }}></i>
         </button>
       )}
