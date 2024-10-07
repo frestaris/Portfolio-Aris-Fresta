@@ -1,51 +1,57 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "./Card";
-import youtube1 from "../assets/Youtube-1.png";
-import youtube2 from "../assets/Youtube-2.png";
-import youtube3 from "../assets/Youtube-3.png";
-import bankist1 from "../assets/Bankist-1.png";
-import bankist2 from "../assets/Bankist-2.png";
-import bankist3 from "../assets/Bankist-3.png";
-import website1 from "../assets/Website1.png";
-import website2 from "../assets/Website2.png";
-import website3 from "../assets/Website3.png";
+import budget1 from "../assets/budget1.png";
+import budget2 from "../assets/budget2.png";
+import budget3 from "../assets/budget3.png";
+import keno1 from "../assets/keno-1.png";
+import keno2 from "../assets/keno-2.png";
+import keno3 from "../assets/keno-3.png";
+import worldTracker1 from "../assets/world-tracker-1.png";
+import worldTracker2 from "../assets/world-tracker-2.png";
+import worldTracker3 from "../assets/world-tracker-3.png";
+import gym1 from "../assets/gym1.png";
+import gym2 from "../assets/gym2.png";
+import gym3 from "../assets/gym3.png";
+import watchit1 from "../assets/watch-it1.png";
+import watchit2 from "../assets/watch-it2.png";
+
 import "./Projects.css";
 
 const projectData = [
   {
     id: 1,
-    title: "Youtube Clone App",
-    linkUrl: "https://github.com/frestaris/Youtube-clone-React",
-    live: "https://www.google.com/",
-    images: [youtube1, youtube2, youtube3],
-  },
-  {
-    id: 2,
-    title: "Bankist Transaction",
-    linkUrl: "https://github.com/frestaris/Bank-account-simple-template",
-    live: "https://www.google.com/",
-    images: [bankist2, bankist1, bankist3],
-  },
-  {
-    id: 3,
-    title: "University Website",
-    linkUrl: "https://github.com/frestaris/University-website-template",
-    live: "https://www.google.com/",
-    images: [website1, website2, website3],
-  },
-  {
-    id: 4,
     title: "Gym Website",
     linkUrl: "https://github.com/frestaris/Gym-React",
     live: "https://brosgym.netlify.app/",
-    images: [website1, website2, website3],
+    images: [gym1, gym2, gym3],
   },
   {
-    id: 5,
+    id: 2,
     title: "World Tracker",
     linkUrl: "https://github.com/frestaris/world-tracker-react",
     live: "https://world-tracker-react.netlify.app/",
-    images: [website1, website2, website3],
+    images: [worldTracker1, worldTracker2, worldTracker3],
+  },
+  {
+    id: 3,
+    title: "Keno Game",
+    linkUrl: "https://github.com/frestaris/keno-simulator",
+    live: "https://keno-simulator-game.netlify.app/",
+    images: [keno1, keno2, keno3],
+  },
+  {
+    id: 4,
+    title: "Budget Planner",
+    linkUrl: "https://github.com/frestaris/tracking-movements",
+    live: "https://tracker-movements.netlify.app/",
+    images: [budget1, budget2, budget3],
+  },
+  {
+    id: 5,
+    title: "Watch it",
+    linkUrl: "https://github.com/frestaris/watch-it",
+    live: "https://watch-itv1.netlify.app/",
+    images: [watchit1, watchit2],
   },
 ];
 
