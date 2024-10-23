@@ -14,6 +14,12 @@ import gym2 from "../assets/gym2.png";
 import gym3 from "../assets/gym3.png";
 import watchit1 from "../assets/watch-it1.png";
 import watchit2 from "../assets/watch-it2.png";
+import qboard1 from "../assets/qboard-1.png";
+import qboard2 from "../assets/qboard-2.png";
+import qboard3 from "../assets/qboard-3.png";
+import restaurant1 from "../assets/restaurant-1.png";
+import restaurant2 from "../assets/restaurant-2.png";
+import restaurant3 from "../assets/restaurant-3.png";
 
 import "./Projects.css";
 
@@ -52,6 +58,20 @@ const projectData = [
     linkUrl: "https://github.com/frestaris/watch-it",
     live: "https://watch-itv1.netlify.app/",
     images: [watchit1, watchit2],
+  },
+  {
+    id: 6,
+    title: "QBoard",
+    linkUrl: "https://github.com/frestaris/Qboard",
+    live: "https://q-board.netlify.app/",
+    images: [qboard1, qboard2, qboard3],
+  },
+  {
+    id: 7,
+    title: "Restaurant Website",
+    linkUrl: "https://github.com/frestaris/react-restaurant-app",
+    live: "https://react-app-restaurant-website-sample.netlify.app/",
+    images: [restaurant1, restaurant2, restaurant3],
   },
 ];
 

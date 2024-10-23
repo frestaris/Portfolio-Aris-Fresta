@@ -8,6 +8,8 @@ import node from "../assets/node.png";
 import github from "../assets/github.png";
 import git from "../assets/git.png";
 import netlify from "../assets/netlify.png";
+import redux from "../assets/redux.png";
+import tailwind from "../assets/tailwind.png";
 import "./Experience.css";
 
 const Experience = () => {
@@ -44,7 +46,9 @@ const Experience = () => {
     { skill: "CSS", img: css },
     { skill: "JavaScript", img: javascript },
     { skill: "React", img: reactjs },
+    { skill: "Redux", img: redux },
     { skill: "Bootstrap", img: bootstrap },
+    { skill: "Tailwind", img: tailwind },
     { skill: "Node.js", img: node },
     { skill: "Github", img: github },
     { skill: "Git", img: git },
