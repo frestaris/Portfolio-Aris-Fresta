@@ -1,4 +1,3 @@
-import React from "react";
 import profile from "../assets/profile-pic.jpg";
 import pdfFile from "../assets/Resume_ArisFresta_.pdf";
 import facebook from "../assets/facebook.png";
@@ -20,7 +19,7 @@ const Hero = () => {
   return (
     <section id="hero" className="container">
       <div className="row flex-lg-row-reverse header">
-        <div className="col-10 col-sm-8 col-lg-6 text-center pt-5">
+        <div className="col-10 col-sm-8 col-lg-6 text-center pt-5 cover-img-wrap">
           <img
             src={profile}
             className="mx-lg-auto img-fluid rounded-circle profile-pic"

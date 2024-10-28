@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
+import skillsIcon from "../assets/star.png";
+import projectsIcon from "../assets/folder.png";
+import userIcon from "../assets/user.png";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("about-me");
   const [showScrollTopButton, setShowScrollTopButton] = useState(false);
-  const [isNavOpen, setIsNavOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,14 +31,7 @@ const Navbar = () => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      const navbarHeight = document.querySelector(".navbar").offsetHeight;
-      const offset = 10;
-
-      const isHamburgerVisible = window.innerWidth < 768;
-
-      const additionalOffset = isHamburgerVisible ? -200 : 0;
-      const targetScrollPosition =
-        section.offsetTop - navbarHeight - offset - additionalOffset;
+      const targetScrollPosition = section.offsetTop;
 
       window.scrollTo({ top: targetScrollPosition, behavior: "smooth" });
     } else {
@@ -44,10 +39,10 @@ const Navbar = () => {
     }
   };
 
-  const handleNavItemClick = (sectionId, event) => {
+  const handlePieClick = (sectionId, event) => {
     event.preventDefault();
     scrollToSection(sectionId);
-    setIsNavOpen(false);
+    document.body.classList.toggle("active");
   };
 
   const scrollToTop = () => {
@@ -57,51 +52,63 @@ const Navbar = () => {
     });
   };
 
-  const iconMapping = {
-    "about-me": "bi bi-person-fill",
-    skills: "bi bi-star-fill",
-    projects: "bi bi-folder-fill",
-    email: "bi bi-envelope-fill",
-  };
-
   return (
     <>
-      <nav className="navbar fixed-top navbar-expand-md navbar-light bg-light">
+      <nav className="navbar fixed-top">
         <div className="container">
-          <a className="navbar-brand" href="/">
-            Aris's Portfolio
-          </a>
           <div
-            className={`ham-menu ${isNavOpen ? "open" : ""}`}
-            onClick={() => setIsNavOpen((prev) => !prev)}
+            className="pie pie1"
+            onClick={(event) => handlePieClick("about-me", event)}
           >
-            <div className="bar"></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
+            <div className="pie-color pie-color1">
+              <img src={userIcon} alt="about me" className="icon user" />
+            </div>
           </div>
           <div
-            className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`}
-            id="navbarSupportedContent"
+            className="pie pie2"
+            onClick={(event) => handlePieClick("skills", event)}
           >
-            <ul className="navbar-nav ms-auto mb-2 mb-md-0">
-              {["about-me", "skills", "projects", "email"].map((section) => (
-                <li className="nav-item" key={section}>
-                  <a
-                    href="#"
-                    className="nav-link"
-                    onClick={(event) => handleNavItemClick(section, event)}
-                  >
-                    <i
-                      className={iconMapping[section]}
-                      style={{ fontSize: "20px", marginRight: "5px" }}
-                    ></i>
-                    {section
-                      .replace("-", " ")
-                      .replace(/^\w/, (c) => c.toUpperCase())}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <div className="pie-color pie-color2">
+              <img src={skillsIcon} alt="Skills" className="icon skills" />
+            </div>
+          </div>
+          <div
+            className="pie pie3"
+            onClick={(event) => handlePieClick("projects", event)}
+          >
+            <div className="pie-color pie-color3">
+              <img
+                src={projectsIcon}
+                alt="Projects"
+                className="icon projects"
+              />
+            </div>
+          </div>
+
+          <div
+            className="menu"
+            onClick={() => document.body.classList.toggle("active")}
+          >
+            <svg
+              className="hamburger"
+              xmlns="http://www.w3.org/2000/svg"
+              width="100"
+              height="100"
+              viewBox="0 0 100 100"
+            >
+              <g
+                fill="none"
+                stroke="#000"
+                strokeWidth="7.999"
+                strokeLinecap="round"
+              >
+                <path d="M 55,26.000284 L 24.056276,25.999716" />
+                <path d="M 24.056276,49.999716 L 75.943724,50.000284" />
+                <path d="M 45,73.999716 L 75.943724,74.000284" />
+                <path d="M 75.943724,26.000284 L 45,25.999716" />
+                <path d="M 24.056276,73.999716 L 55,74.000284" />
+              </g>
+            </svg>
           </div>
         </div>
       </nav>
