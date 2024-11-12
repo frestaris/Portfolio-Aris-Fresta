@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
@@ -10,6 +10,9 @@ import git from "../assets/git.png";
 import netlify from "../assets/netlify.png";
 import redux from "../assets/redux.png";
 import tailwind from "../assets/tailwind.png";
+import mongodb from "../assets/mongodb.png";
+import express from "../assets/expressjs.png";
+import postman from "../assets/postman.png";
 import "./Experience.css";
 
 const Experience = () => {
@@ -53,6 +56,9 @@ const Experience = () => {
     { skill: "Github", img: github },
     { skill: "Git", img: git },
     { skill: "Netlify", img: netlify },
+    { skill: "MongoDB", img: mongodb },
+    { skill: "Postman", img: postman },
+    { skill: "Express.js", img: express },
   ];
 
   return (

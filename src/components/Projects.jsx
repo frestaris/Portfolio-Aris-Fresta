@@ -14,9 +14,9 @@ import gym2 from "../assets/gym2.png";
 import gym3 from "../assets/gym3.png";
 import watchit1 from "../assets/watch-it1.png";
 import watchit2 from "../assets/watch-it2.png";
-import qboard1 from "../assets/qboard-1.png";
-import qboard2 from "../assets/qboard-2.png";
-import qboard3 from "../assets/qboard-3.png";
+import ask1 from "../assets/ask1.png";
+import ask2 from "../assets/ask2.png";
+import ask3 from "../assets/ask3.png";
 import restaurant1 from "../assets/restaurant-1.png";
 import restaurant2 from "../assets/restaurant-2.png";
 import restaurant3 from "../assets/restaurant-3.png";
@@ -61,10 +61,10 @@ const projectData = [
   },
   {
     id: 6,
-    title: "QBoard",
-    linkUrl: "https://github.com/frestaris/Qboard",
-    live: "https://q-board.netlify.app/",
-    images: [qboard1, qboard2, qboard3],
+    title: "Ask",
+    linkUrl: "https://github.com/frestaris/ask",
+    live: "https://ask-mern.onrender.com/",
+    images: [ask1, ask2, ask3],
   },
   {
     id: 7,
