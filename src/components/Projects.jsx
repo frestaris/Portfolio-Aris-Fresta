@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
-import budget1 from "../assets/budget1.png";
-import budget2 from "../assets/budget2.png";
-import budget3 from "../assets/budget3.png";
+import budget1 from "../assets/budgetmate1.png";
+import budget2 from "../assets/budgetmate2.png";
+import budget3 from "../assets/budgetmate3.png";
 import keno1 from "../assets/keno-1.png";
 import keno2 from "../assets/keno-2.png";
 import keno3 from "../assets/keno-3.png";
@@ -47,9 +47,9 @@ const projectData = [
   },
   {
     id: 4,
-    title: "Budget Planner",
-    linkUrl: "https://github.com/frestaris/tracking-movements",
-    live: "https://tracker-movements.netlify.app/",
+    title: "BudgetMate",
+    linkUrl: "https://github.com/frestaris/budgetmate",
+    live: "https://budgetmate-kezr.onrender.com",
     images: [budget1, budget2, budget3],
   },
   {
