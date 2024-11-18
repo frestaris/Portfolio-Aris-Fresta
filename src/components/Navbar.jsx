@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Navbar.css";
 import skillsIcon from "../assets/star.png";
 import projectsIcon from "../assets/folder.png";
 import userIcon from "../assets/user.png";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("about-me");
   const [showScrollTopButton, setShowScrollTopButton] = useState(false);
+  const { theme } = useSelector((state) => state.theme);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -86,7 +88,9 @@ const Navbar = () => {
           </div>
 
           <div
-            className="menu"
+            className={`menu ${
+              theme === "dark" ? "dark-mode-menu" : "light-mode"
+            }`}
             onClick={() => document.body.classList.toggle("active")}
           >
             <svg
@@ -98,7 +102,7 @@ const Navbar = () => {
             >
               <g
                 fill="none"
-                stroke="#000"
+                stroke={theme === "dark" ? "#fff" : "#000"}
                 strokeWidth="7.999"
                 strokeLinecap="round"
               >

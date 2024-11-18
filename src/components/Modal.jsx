@@ -56,7 +56,7 @@ const Modal = ({ closeModal }) => {
         <div className="modal-dialog modal-dialog-centered" ref={modalRef}>
           <div className="modal-content">
             <div className="modal-header">
-              <h1 className="modal-title fs-2">Email me</h1>
+              <h1 className="modal-title text-black fs-2">Email me</h1>
               <button
                 type="button"
                 className="btn-close"

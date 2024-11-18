@@ -150,3 +150,8 @@
 .scroll-top-button:hover {
   opacity: 0.6;
 }
+
+.dark-mode-menu {
+  background-color: #1a1a1a;
+  box-shadow: rgba(253, 253, 253, 0.2) 0px 4px 16px 4px;
+}

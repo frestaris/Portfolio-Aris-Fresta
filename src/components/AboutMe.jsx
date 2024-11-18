@@ -1,8 +1,10 @@
-import React from "react";
+import { useSelector } from "react-redux";
 import pic from "../assets/pic-1.jpg";
 import "./AboutMe.css";
 
 const AboutMe = () => {
+  const { theme } = useSelector((state) => state.theme);
+
   return (
     <section id="about-me">
       <div className="row g-lg-5">
@@ -22,7 +24,11 @@ const AboutMe = () => {
 
         <div className="text-align col-md-10 mx-auto col-lg-5">
           <div className="d-grid gap-2 flex">
-            <div className="content" style={{ marginTop: "1rem" }}>
+            <div
+              className={`content mt-2 ${
+                theme === "dark" ? "dark-mode" : "light-mode"
+              }`}
+            >
               <i className="bi bi-award" style={{ fontSize: "30px" }}></i>
               <h3>Experience</h3>
               <p>
@@ -30,7 +36,11 @@ const AboutMe = () => {
                 Frontend Development
               </p>
             </div>
-            <div className="content" style={{ marginTop: "1rem" }}>
+            <div
+              className={`content mt-2 ${
+                theme === "dark" ? "dark-mode" : "light-mode"
+              }`}
+            >
               <i
                 className="bi bi-person-workspace"
                 style={{ fontSize: "30px" }}

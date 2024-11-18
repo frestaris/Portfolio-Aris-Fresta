@@ -5,8 +5,11 @@ import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 
 import "./Hero.css";
+import { useSelector } from "react-redux";
 
 const Hero = () => {
+  const { theme } = useSelector((state) => state.theme);
+
   const handleDownloadCV = () => {
     const link = document.createElement("a");
     link.href = pdfFile;
@@ -19,7 +22,7 @@ const Hero = () => {
   return (
     <section id="hero" className="container">
       <div className="row flex-lg-row-reverse header">
-        <div className="col-10 col-sm-8 col-lg-6 text-center pt-5 cover-img-wrap">
+        <div className="col-10 col-sm-8 col-lg-6 text-center pt-5">
           <img
             src={profile}
             className="mx-lg-auto img-fluid rounded-circle profile-pic"
@@ -30,14 +33,14 @@ const Hero = () => {
 
         <div className="col-lg-6 text-center">
           <p>Hello, I'm</p>
-          <h1 className="display-6 fw-bold text-body-emphasis lh-1 mb-3">
-            Aris Fresta
-          </h1>
+          <h1 className="display-6 fw-bold lh-1 mb-3">Aris Fresta</h1>
           <p className="lead">Front-end Web Developer</p>
 
           <button
             type="button"
-            className="btn btn-dark btn-lg px-4 me-md-2 rounded-pill"
+            className={`btn btn-lg px-4 me-md-2 rounded-pill ${
+              theme === "dark" ? "btn-dark-mode" : "btn-light-mode"
+            }`}
             onClick={handleDownloadCV}
           >
             Download CV

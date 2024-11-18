@@ -1,6 +1,8 @@
-import React from "react";
+import { useSelector } from "react-redux";
 
 const Card = ({ id, title, image, linkUrl, live, className }) => {
+  const { theme } = useSelector((state) => state.theme);
+
   return (
     <section>
       <div className={`card ${className}`}>
@@ -59,7 +61,11 @@ const Card = ({ id, title, image, linkUrl, live, className }) => {
             </>
           )}
         </div>
-        <div className="card-body text-center">
+        <div
+          className={`card-body text-center ${
+            theme === "dark" ? "dark-mode" : "light-mode"
+          }`}
+        >
           <h2 className="d-block fs-2" href="#">
             {title}
           </h2>

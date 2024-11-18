@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Modal from "./Modal";
+import { useSelector } from "react-redux";
 
 const currentYear = new Date().getFullYear();
 
 const Footer = () => {
   const [showModal, setShowModal] = useState(false);
+  const { theme } = useSelector((state) => state.theme);
 
   const handleEmailMeClick = () => {
     setShowModal(true);
@@ -32,7 +34,7 @@ const Footer = () => {
   };
 
   return (
-    <footer id="email" className="container my-4">
+    <footer id="email" className="container mb-0">
       {showModal && (
         <div className="modal-overlay">
           <Modal closeModal={closeModal} />
@@ -40,8 +42,11 @@ const Footer = () => {
       )}
       <div className="text-center py-5">
         <p>Get in Touch</p>
+
         <button
-          className="btn btn-dark btn-lg w-50"
+          className={`btn btn-dark btn-lg w-50 ${
+            theme === "dark" ? "dark-mode" : "light-mode"
+          }`}
           onClick={handleEmailMeClick}
         >
           Email Me
@@ -51,7 +56,7 @@ const Footer = () => {
         <li className="nav-item">
           <a
             href="#"
-            className="nav-link px-2 text-body-secondary"
+            className="nav-link px-2 title"
             onClick={(event) => handleFooterNavItemClick("about-me", event)}
           >
             About Me
@@ -60,7 +65,7 @@ const Footer = () => {
         <li className="nav-item">
           <a
             href="#"
-            className="nav-link px-2 text-body-secondary"
+            className="nav-link px-2 title"
             onClick={(event) => handleFooterNavItemClick("skills", event)}
           >
             Skills
@@ -69,16 +74,14 @@ const Footer = () => {
         <li className="nav-item">
           <a
             href="#"
-            className="nav-link px-2 text-body-secondary"
+            className="nav-link px-2 title"
             onClick={(event) => handleFooterNavItemClick("projects", event)}
           >
             Projects
           </a>
         </li>
       </ul>
-      <p className="text-center text-body-secondary">
-        Copyright © {currentYear} Aris
-      </p>
+      <p className="text-center title">Copyright © {currentYear} Aris</p>
     </footer>
   );
 };
