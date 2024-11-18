@@ -22,10 +22,12 @@ const Hero = () => {
   return (
     <section id="hero" className="container">
       <div className="row flex-lg-row-reverse header">
-        <div className="col-10 col-sm-8 col-lg-6 text-center pt-5">
+        <div className="col-10 col-sm-8 col-lg-6 text-center">
           <img
             src={profile}
-            className="mx-lg-auto img-fluid rounded-circle profile-pic"
+            className={`mx-lg-auto img-fluid profile-pic ${
+              theme === "dark" ? "pic-dark-mode" : ""
+            }`}
             alt="Profile"
             loading="lazy"
           />
