@@ -3,9 +3,9 @@ import Card from "./Card";
 import budget1 from "../assets/budgetmate1.png";
 import budget2 from "../assets/budgetmate2.png";
 import budget3 from "../assets/budgetmate3.png";
-import keno1 from "../assets/keno-1.png";
-import keno2 from "../assets/keno-2.png";
-import keno3 from "../assets/keno-3.png";
+import eCommerce1 from "../assets/eCommerce1.png";
+import eCommerce2 from "../assets/eCommerce2.png";
+import eCommerce3 from "../assets/eCommerce3.png";
 import worldTracker1 from "../assets/world-tracker-1.png";
 import worldTracker2 from "../assets/world-tracker-2.png";
 import worldTracker3 from "../assets/world-tracker-3.png";
@@ -40,10 +40,11 @@ const projectData = [
   },
   {
     id: 3,
-    title: "Keno Game",
-    linkUrl: "https://github.com/frestaris/keno-simulator",
-    live: "https://keno-simulator-game.netlify.app/",
-    images: [keno1, keno2, keno3],
+    title: "e-Commerce Plants Website",
+    linkUrl:
+      "https://github.com/frestaris/Full-stack-e-commerce--Plants-website--React",
+    live: "https://full-stack-e-commerce-plants-website-react.vercel.app/",
+    images: [eCommerce1, eCommerce2, eCommerce3],
   },
   {
     id: 4,
