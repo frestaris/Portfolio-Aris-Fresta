@@ -50,7 +50,7 @@ const projectData = [
     id: 4,
     title: "BudgetMate",
     linkUrl: "https://github.com/frestaris/budgetmate",
-    live: "https://budgetmate-kezr.onrender.com",
+    live: "https://budgetmate-frontend.vercel.app/",
     images: [budget1, budget2, budget3],
   },
   {
