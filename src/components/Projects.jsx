@@ -40,7 +40,7 @@ const projectData = [
   },
   {
     id: 3,
-    title: "e-Commerce Plants Website",
+    title: "e-Commerce Plants",
     linkUrl:
       "https://github.com/frestaris/Full-stack-e-commerce--Plants-website--React",
     live: "https://full-stack-e-commerce-plants-website-react.vercel.app/",
@@ -64,7 +64,7 @@ const projectData = [
     id: 6,
     title: "Ask",
     linkUrl: "https://github.com/frestaris/ask",
-    live: "https://ask-mern.onrender.com/",
+    live: "https://ask-frontend-virid.vercel.app/",
     images: [ask1, ask2, ask3],
   },
   {
