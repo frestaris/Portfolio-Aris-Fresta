@@ -32,8 +32,8 @@ const AboutMe = () => {
               <i className="bi bi-award" style={{ fontSize: "30px" }}></i>
               <h3>Experience</h3>
               <p>
-                1+ year <br />
-                Frontend Development
+                2+ year <br />
+                Web Development
               </p>
             </div>
             <div
@@ -46,22 +46,25 @@ const AboutMe = () => {
                 style={{ fontSize: "30px" }}
               ></i>
               <h3>Education</h3>
-              <p>Diploma of IT</p>
+              <p>Self-Taught Web Developer</p>
             </div>
           </div>
         </div>
         <p className="text-center pt-4">
-          With an Italian-Greek background, I have been living in Australia for
-          10 years now, where I have settled my own family. I have always had a
-          strong passion for web development. Although I haven't had
-          professional experience in the field yet, I have spent several years
-          dedicated to self-learning and developing foundational skills in web
-          development. Through online courses, tutorials, and personal projects,
-          I have acquired a solid understanding of HTML, CSS, and JavaScript. My
-          self- driven approach to learning, coupled with a natural aptitude for
-          grasping new concepts quickly, has equipped me with the ability to
-          adapt in new environments. I am ready to bring my skills and passion
-          to the next level and finally make it my profession.
+          "Over the past few years, I have dedicated myself in learning and
+          improving my skills with modern technologies, with a particular focus
+          on React framework. My expertise includes building dynamic,
+          responsive, and user-friendly applications, leveraging React Redux for
+          state management, and implementing scalable and maintainable code.
+          <br />
+          <br />I have hands-on experience developing full-stack applications
+          using MERN.I’ve learned a lot by working on personal projects, taking
+          online courses, and collaborating on projects that feel like
+          real-world work. I’m passionate about writing clean, efficient, and
+          responsive code that works well across all devices. I’m always looking
+          to improve my skills and stay ahead in the tech industry. Weird as it
+          sound, I really enjoy debugging and testing to ensure seamless
+          functionality and performance.
         </p>
       </div>
 

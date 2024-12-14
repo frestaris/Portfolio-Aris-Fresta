@@ -26,26 +26,27 @@ import "./Projects.css";
 const projectData = [
   {
     id: 1,
-    title: "Gym Website",
-    linkUrl: "https://github.com/frestaris/Gym-React",
-    live: "https://brosgym.netlify.app/",
-    images: [gym1, gym2, gym3],
-  },
-  {
-    id: 2,
-    title: "World Tracker",
-    linkUrl: "https://github.com/frestaris/world-tracker-react",
-    live: "https://world-tracker-react.netlify.app/",
-    images: [worldTracker1, worldTracker2, worldTracker3],
-  },
-  {
-    id: 3,
     title: "e-Commerce Plants",
     linkUrl:
       "https://github.com/frestaris/Full-stack-e-commerce--Plants-website--React",
     live: "https://full-stack-e-commerce-plants-website-react.vercel.app/",
     images: [eCommerce1, eCommerce2, eCommerce3],
   },
+  {
+    id: 2,
+    title: "Gym Website",
+    linkUrl: "https://github.com/frestaris/Gym-React",
+    live: "https://brosgym.netlify.app/",
+    images: [gym1, gym2, gym3],
+  },
+  {
+    id: 3,
+    title: "World Tracker",
+    linkUrl: "https://github.com/frestaris/world-tracker-react",
+    live: "https://world-tracker-react.netlify.app/",
+    images: [worldTracker1, worldTracker2, worldTracker3],
+  },
+
   {
     id: 4,
     title: "BudgetMate",
@@ -55,10 +56,10 @@ const projectData = [
   },
   {
     id: 5,
-    title: "Watch it",
-    linkUrl: "https://github.com/frestaris/watch-it",
-    live: "https://watch-itv1.netlify.app/",
-    images: [watchit1, watchit2],
+    title: "Restaurant Website",
+    linkUrl: "https://github.com/frestaris/react-restaurant-app",
+    live: "https://react-app-restaurant-website-sample.netlify.app/",
+    images: [restaurant1, restaurant2, restaurant3],
   },
   {
     id: 6,
@@ -67,12 +68,13 @@ const projectData = [
     live: "https://ask-frontend-virid.vercel.app/",
     images: [ask1, ask2, ask3],
   },
+
   {
     id: 7,
-    title: "Restaurant Website",
-    linkUrl: "https://github.com/frestaris/react-restaurant-app",
-    live: "https://react-app-restaurant-website-sample.netlify.app/",
-    images: [restaurant1, restaurant2, restaurant3],
+    title: "Watch it",
+    linkUrl: "https://github.com/frestaris/watch-it",
+    live: "https://watch-itv1.netlify.app/",
+    images: [watchit1, watchit2],
   },
 ];
 

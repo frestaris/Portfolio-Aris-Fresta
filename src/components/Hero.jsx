@@ -36,7 +36,7 @@ const Hero = () => {
         <div className="col-lg-6 text-center">
           <p>Hello, I'm</p>
           <h1 className="display-6 fw-bold lh-1 mb-3">Aris Fresta</h1>
-          <p className="lead">Front-end Web Developer</p>
+          <p className="lead">Full Stack Web Developer</p>
 
           <button
             type="button"
