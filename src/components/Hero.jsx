@@ -1,5 +1,5 @@
 import profile from "../assets/profile-pic.jpg";
-import pdfFile from "../assets/Resume_ArisFresta_.pdf";
+import pdfFile from "../assets/Resume_ArisFresta_2025.pdf";
 import facebook from "../assets/facebook.png";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
@@ -71,7 +71,8 @@ const Hero = () => {
               alt="Facebook"
               style={{ width: "35px", cursor: "pointer" }}
               onClick={() =>
-                (window.location.href = "https://www.facebook.com")
+                (window.location.href =
+                  "https://www.facebook.com/profile.php?id=100089753169567")
               }
             />
           </div>
