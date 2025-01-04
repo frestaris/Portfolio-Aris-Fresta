@@ -12,8 +12,9 @@ import worldTracker3 from "../assets/world-tracker-3.png";
 import gym1 from "../assets/gym1.png";
 import gym2 from "../assets/gym2.png";
 import gym3 from "../assets/gym3.png";
-import watchit1 from "../assets/watch-it1.png";
-import watchit2 from "../assets/watch-it2.png";
+import rentcar1 from "../assets/car-rental1.png";
+import rentcar2 from "../assets/car-rental2.png";
+import rentcar3 from "../assets/car-rental3.png";
 import ask1 from "../assets/ask1.png";
 import ask2 from "../assets/ask2.png";
 import ask3 from "../assets/ask3.png";
@@ -41,12 +42,11 @@ const projectData = [
   },
   {
     id: 3,
-    title: "World Tracker",
-    linkUrl: "https://github.com/frestaris/world-tracker-react",
-    live: "https://world-tracker-react.netlify.app/",
-    images: [worldTracker1, worldTracker2, worldTracker3],
+    title: "Rental Car",
+    linkUrl: "https://github.com/frestaris/Mern_Rental_Car",
+    live: "https://mern-car-rent.netlify.app/",
+    images: [rentcar1, rentcar2, rentcar3],
   },
-
   {
     id: 4,
     title: "BudgetMate",
@@ -68,13 +68,12 @@ const projectData = [
     live: "https://ask-frontend-virid.vercel.app/",
     images: [ask1, ask2, ask3],
   },
-
   {
     id: 7,
-    title: "Watch it",
-    linkUrl: "https://github.com/frestaris/watch-it",
-    live: "https://watch-itv1.netlify.app/",
-    images: [watchit1, watchit2],
+    title: "World Tracker",
+    linkUrl: "https://github.com/frestaris/world-tracker-react",
+    live: "https://world-tracker-react.netlify.app/",
+    images: [worldTracker1, worldTracker2, worldTracker3],
   },
 ];
 
