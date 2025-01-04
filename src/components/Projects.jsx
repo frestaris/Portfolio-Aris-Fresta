@@ -44,7 +44,7 @@ const projectData = [
     id: 3,
     title: "Rental Car",
     linkUrl: "https://github.com/frestaris/Mern_Rental_Car",
-    live: "https://mern-car-rent.netlify.app/",
+    live: "https://mern-rental-car-frontend.vercel.app/",
     images: [rentcar1, rentcar2, rentcar3],
   },
   {
