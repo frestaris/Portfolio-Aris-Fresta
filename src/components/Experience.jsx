@@ -13,6 +13,10 @@ import tailwind from "../assets/tailwind.png";
 import mongodb from "../assets/mongodb.png";
 import express from "../assets/expressjs.png";
 import postman from "../assets/postman.png";
+import stripe from "../assets/stripe.png";
+import cloudinary from "../assets/cloudinary.png";
+import vercel from "../assets/Vercel.png";
+
 import "./Experience.css";
 
 const Experience = () => {
@@ -48,17 +52,20 @@ const Experience = () => {
     { skill: "HTML", img: html },
     { skill: "CSS", img: css },
     { skill: "JavaScript", img: javascript },
-    { skill: "React", img: reactjs },
-    { skill: "Redux", img: redux },
     { skill: "Bootstrap", img: bootstrap },
-    { skill: "Tailwind", img: tailwind },
+    { skill: "MongoDB", img: mongodb },
+    { skill: "Express.js", img: express },
+    { skill: "React", img: reactjs },
     { skill: "Node.js", img: node },
+    { skill: "Redux", img: redux },
+    { skill: "Tailwind", img: tailwind },
+    { skill: "Postman", img: postman },
+    { skill: "Cloudinary", img: cloudinary },
+    { skill: "Stripe", img: stripe },
+    { skill: "Netlify", img: netlify },
+    { skill: "Vercel", img: vercel },
     { skill: "Github", img: github },
     { skill: "Git", img: git },
-    { skill: "Netlify", img: netlify },
-    { skill: "MongoDB", img: mongodb },
-    { skill: "Postman", img: postman },
-    { skill: "Express.js", img: express },
   ];
 
   return (

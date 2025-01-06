@@ -21,38 +21,87 @@ import ask3 from "../assets/ask3.png";
 import restaurant1 from "../assets/restaurant-1.png";
 import restaurant2 from "../assets/restaurant-2.png";
 import restaurant3 from "../assets/restaurant-3.png";
-
 import "./Projects.css";
 
 const projectData = [
   {
     id: 1,
+    title: "Rental Car",
+    linkUrl: "https://github.com/frestaris/Mern_Rental_Car",
+    live: "https://mern-rental-car-frontend.vercel.app/",
+    images: [rentcar1, rentcar2, rentcar3],
+    technologies: [
+      "Html",
+      "Tailwind CSS",
+      "Redux",
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "Stripe",
+      "Cloudinary",
+      "Bcrypt",
+      "Jsonwebtoken",
+    ],
+  },
+  {
+    id: 2,
     title: "e-Commerce Plants",
     linkUrl:
       "https://github.com/frestaris/Full-stack-e-commerce--Plants-website--React",
     live: "https://full-stack-e-commerce-plants-website-react.vercel.app/",
     images: [eCommerce1, eCommerce2, eCommerce3],
-  },
-  {
-    id: 2,
-    title: "Gym Website",
-    linkUrl: "https://github.com/frestaris/Gym-React",
-    live: "https://brosgym.netlify.app/",
-    images: [gym1, gym2, gym3],
+    technologies: [
+      "Html",
+      "Tailwind CSS",
+      "Redux",
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "Stripe",
+      "Cloudinary",
+      "Bcrypt",
+      "Jsonwebtoken",
+    ],
   },
   {
     id: 3,
-    title: "Rental Car",
-    linkUrl: "https://github.com/frestaris/Mern_Rental_Car",
-    live: "https://mern-rental-car-frontend.vercel.app/",
-    images: [rentcar1, rentcar2, rentcar3],
-  },
-  {
-    id: 4,
     title: "BudgetMate",
     linkUrl: "https://github.com/frestaris/budgetmate",
     live: "https://budgetmate-frontend.vercel.app/",
     images: [budget1, budget2, budget3],
+    technologies: [
+      "Html",
+      "Flowbite CSS",
+      "Redux",
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "Firebase",
+      "Bcrypt",
+      "Jsonwebtoken",
+    ],
+  },
+  {
+    id: 4,
+    title: "Ask",
+    linkUrl: "https://github.com/frestaris/ask",
+    live: "https://ask-frontend-virid.vercel.app/",
+    images: [ask1, ask2, ask3],
+    technologies: [
+      "Html",
+      "Bootstrap CSS",
+      "Redux",
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "Firebase",
+      "Bcrypt",
+      "Jsonwebtoken",
+    ],
   },
   {
     id: 5,
@@ -60,13 +109,15 @@ const projectData = [
     linkUrl: "https://github.com/frestaris/react-restaurant-app",
     live: "https://react-app-restaurant-website-sample.netlify.app/",
     images: [restaurant1, restaurant2, restaurant3],
+    technologies: ["Html", "Ant Design", "Redux", "React"],
   },
   {
     id: 6,
-    title: "Ask",
-    linkUrl: "https://github.com/frestaris/ask",
-    live: "https://ask-frontend-virid.vercel.app/",
-    images: [ask1, ask2, ask3],
+    title: "Gym Website",
+    linkUrl: "https://github.com/frestaris/Gym-React",
+    live: "https://brosgym.netlify.app/",
+    images: [gym1, gym2, gym3],
+    technologies: ["Html", "Bootstrap CSS", "React"],
   },
   {
     id: 7,
@@ -74,6 +125,7 @@ const projectData = [
     linkUrl: "https://github.com/frestaris/world-tracker-react",
     live: "https://world-tracker-react.netlify.app/",
     images: [worldTracker1, worldTracker2, worldTracker3],
+    technologies: ["Html", "Bootstrap CSS", "Ant Design", "React"],
   },
 ];
 
@@ -126,6 +178,7 @@ const Projects = () => {
               linkUrl={project.linkUrl}
               live={project.live}
               image={project.images}
+              technologies={project.technologies}
             />
           </div>
         ))}

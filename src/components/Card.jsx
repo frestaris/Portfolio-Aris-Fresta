@@ -1,7 +1,21 @@
+import { useState } from "react";
 import { useSelector } from "react-redux";
+import InfoModal from "./InfoModal";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
-const Card = ({ id, title, image, linkUrl, live, className }) => {
+const Card = ({ id, title, image, linkUrl, live, className, technologies }) => {
   const { theme } = useSelector((state) => state.theme);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const renderTooltip = (props) => (
+    <Tooltip id={`tooltip-${id}`} {...props}>
+      Technologies
+    </Tooltip>
+  );
 
   return (
     <section>
@@ -66,8 +80,20 @@ const Card = ({ id, title, image, linkUrl, live, className }) => {
             theme === "dark" ? "dark-mode" : "light-mode"
           }`}
         >
-          <h2 className="d-block fs-2" href="#">
-            {title}
+          <h2 className="d-block fs-2">
+            {title}{" "}
+            <OverlayTrigger placement="top" overlay={renderTooltip}>
+              <a
+                href=""
+                className="cursor-pointer text-decoration-none"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsModalOpen(true);
+                }}
+              >
+                <i className="bi bi-info-circle"></i>
+              </a>
+            </OverlayTrigger>
           </h2>
           <div className="d-flex justify-content-between mt-3">
             <a className="btn btn-dark me-2" href={linkUrl}>
@@ -79,6 +105,11 @@ const Card = ({ id, title, image, linkUrl, live, className }) => {
           </div>
         </div>
       </div>
+      {isModalOpen && (
+        <div className="modal-overlay">
+          <InfoModal closeModal={closeModal} technologies={technologies} />
+        </div>
+      )}
     </section>
   );
 };
