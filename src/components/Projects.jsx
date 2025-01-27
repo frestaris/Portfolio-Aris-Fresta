@@ -6,9 +6,9 @@ import budget3 from "../assets/budgetmate3.png";
 import eCommerce1 from "../assets/eCommerce1.png";
 import eCommerce2 from "../assets/eCommerce2.png";
 import eCommerce3 from "../assets/eCommerce3.png";
-import worldTracker1 from "../assets/world-tracker-1.png";
-import worldTracker2 from "../assets/world-tracker-2.png";
-import worldTracker3 from "../assets/world-tracker-3.png";
+import dentist1 from "../assets/dentist1.png";
+import dentist2 from "../assets/dentist2.png";
+import dentist3 from "../assets/dentist3.png";
 import gym1 from "../assets/gym1.png";
 import gym2 from "../assets/gym2.png";
 import gym3 from "../assets/gym3.png";
@@ -67,6 +67,21 @@ const projectData = [
   },
   {
     id: 3,
+    title: "Dentist Website",
+    linkUrl: "https://github.com/frestaris/Dentist-Website",
+    live: "https://dentist-website-frontend.vercel.app/",
+    images: [dentist1, dentist2, dentist3],
+    technologies: [
+      "Html",
+      "Tailwind CSS",
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+    ],
+  },
+  {
+    id: 4,
     title: "BudgetMate",
     linkUrl: "https://github.com/frestaris/budgetmate",
     live: "https://budgetmate-frontend.vercel.app/",
@@ -74,25 +89,6 @@ const projectData = [
     technologies: [
       "Html",
       "Flowbite CSS",
-      "Redux",
-      "MongoDB",
-      "Express.js",
-      "React",
-      "Node.js",
-      "Firebase",
-      "Bcrypt",
-      "Jsonwebtoken",
-    ],
-  },
-  {
-    id: 4,
-    title: "Ask",
-    linkUrl: "https://github.com/frestaris/ask",
-    live: "https://ask-frontend-virid.vercel.app/",
-    images: [ask1, ask2, ask3],
-    technologies: [
-      "Html",
-      "Bootstrap CSS",
       "Redux",
       "MongoDB",
       "Express.js",
@@ -113,19 +109,30 @@ const projectData = [
   },
   {
     id: 6,
+    title: "Ask",
+    linkUrl: "https://github.com/frestaris/ask",
+    live: "https://ask-frontend-virid.vercel.app/",
+    images: [ask1, ask2, ask3],
+    technologies: [
+      "Html",
+      "Bootstrap CSS",
+      "Redux",
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "Firebase",
+      "Bcrypt",
+      "Jsonwebtoken",
+    ],
+  },
+  {
+    id: 7,
     title: "Gym Website",
     linkUrl: "https://github.com/frestaris/Gym-React",
     live: "https://brosgym.netlify.app/",
     images: [gym1, gym2, gym3],
     technologies: ["Html", "Bootstrap CSS", "React"],
-  },
-  {
-    id: 7,
-    title: "World Tracker",
-    linkUrl: "https://github.com/frestaris/world-tracker-react",
-    live: "https://world-tracker-react.netlify.app/",
-    images: [worldTracker1, worldTracker2, worldTracker3],
-    technologies: ["Html", "Bootstrap CSS", "Ant Design", "React"],
   },
 ];
 
