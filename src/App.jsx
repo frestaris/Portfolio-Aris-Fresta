@@ -7,7 +7,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import ToggleButton from "./components/ToggleButton";
-import "./App.css"
+import "./App.css";
 
 function App() {
   return (
