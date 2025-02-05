@@ -4,11 +4,19 @@ import skillsIcon from "../assets/star.png";
 import projectsIcon from "../assets/folder.png";
 import userIcon from "../assets/user.png";
 import { useSelector } from "react-redux";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("about-me");
   const [showScrollTopButton, setShowScrollTopButton] = useState(false);
   const { theme } = useSelector((state) => state.theme);
+
+  const renderTooltip = (message) => (props) =>
+    (
+      <Tooltip id={`tooltip-${message}`} {...props}>
+        {message}
+      </Tooltip>
+    );
 
   useEffect(() => {
     const handleScroll = () => {
@@ -60,10 +68,19 @@ const Navbar = () => {
         <div className="container">
           <div
             className="pie pie1"
-            onClick={(event) => handlePieClick("about-me", event)}
+            onClick={(event) => handlePieClick("projects", event)}
           >
             <div className="pie-color pie-color1">
-              <img src={userIcon} alt="about me" className="icon user" />
+              <OverlayTrigger
+                placement="left"
+                overlay={renderTooltip("Projects")}
+              >
+                <img
+                  src={projectsIcon}
+                  alt="Projects"
+                  className="icon projects"
+                />
+              </OverlayTrigger>
             </div>
           </div>
           <div
@@ -71,19 +88,25 @@ const Navbar = () => {
             onClick={(event) => handlePieClick("skills", event)}
           >
             <div className="pie-color pie-color2">
-              <img src={skillsIcon} alt="Skills" className="icon skills" />
+              <OverlayTrigger
+                placement="left"
+                overlay={renderTooltip("Skills")}
+              >
+                <img src={skillsIcon} alt="Skills" className="icon skills" />
+              </OverlayTrigger>
             </div>
           </div>
           <div
             className="pie pie3"
-            onClick={(event) => handlePieClick("projects", event)}
+            onClick={(event) => handlePieClick("about-me", event)}
           >
             <div className="pie-color pie-color3">
-              <img
-                src={projectsIcon}
-                alt="Projects"
-                className="icon projects"
-              />
+              <OverlayTrigger
+                placement="left"
+                overlay={renderTooltip("About Me")}
+              >
+                <img src={userIcon} alt="About Me" className="icon user" />
+              </OverlayTrigger>
             </div>
           </div>
 

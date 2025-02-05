@@ -15,9 +15,9 @@ function App() {
       <ToggleButton />
       <Navbar />
       <Hero />
-      <AboutMe />
-      <Experience />
       <Projects />
+      <Experience />
+      <AboutMe />
       <Footer />
     </div>
   );
