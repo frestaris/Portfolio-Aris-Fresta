@@ -20,12 +20,16 @@ const ParticleBackground = () => {
           color: "transparent",
         },
         particles: {
+          number: {
+            value: window.innerWidth < 768 ? 50 : 80,
+          },
           color: {
-            value: theme === "dark" ? "#ffffff" : "#000000",
+            value: theme === "dark" ? "#ffffff" : "#444",
           },
           links: {
-            color: theme === "dark" ? "#ffffff" : "#000000",
+            color: theme === "dark" ? "#ffffff" : "#444",
             opacity: 0.5,
+            distance: window.innerWidth < 768 ? 70 : 150,
           },
           move: {
             speed: 0.4,
