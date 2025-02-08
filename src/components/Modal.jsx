@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 import "./Modal.css";
 
 const Modal = ({ closeModal }) => {
@@ -39,15 +40,26 @@ const Modal = ({ closeModal }) => {
         templateParams,
         "IneW6DcO23Ir_cqhc"
       )
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          closeModal();
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+      .then(() => {
+        Swal.fire({
+          icon: "success",
+          title: "Email Sent!",
+          text: "Your message has been sent successfully.",
+          confirmButtonColor: "#000",
+        });
+
+        closeModal();
+      })
+      .catch((error) => {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong! Please try again.",
+          confirmButtonColor: "#000",
+        });
+
+        console.error("FAILED...", error.text);
+      });
   };
 
   return (
