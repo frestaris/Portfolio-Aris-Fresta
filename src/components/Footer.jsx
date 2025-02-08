@@ -44,7 +44,7 @@ const Footer = () => {
         <p>Get in Touch</p>
 
         <button
-          className={`btn btn-dark btn-lg w-50 ${
+          className={`btn btn-dark btn-lg w-50 btn-email ${
             theme === "dark" ? "dark-mode" : "light-mode"
           }`}
           onClick={handleEmailMeClick}

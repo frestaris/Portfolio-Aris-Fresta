@@ -39,7 +39,7 @@ const Hero = () => {
 
           <button
             type="button"
-            className={`btn btn-lg px-4 me-md-2 rounded-pill ${
+            className={`btn btn-lg px-4 me-md-2 rounded-pill btn-cv ${
               theme === "dark" ? "btn-dark-mode" : "btn-light-mode"
             }`}
             onClick={handleDownloadCV}

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
@@ -20,7 +21,8 @@ import vercel from "../assets/Vercel.png";
 import "./Experience.css";
 
 const Experience = () => {
-  const [visibleSkills, setVisibleSkills] = useState(Array(9).fill(false));
+  const [visibleSkills, setVisibleSkills] = useState(Array(17).fill(false));
+  const { theme } = useSelector((state) => state.theme);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,7 +71,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="skills">
+    <section id="skills" className={theme === "light" ? "bg-white" : "bg-dark"}>
       <div className="container mt-5">
         <div className="text-center pb-5">
           <p>Explore My</p>
@@ -80,9 +82,13 @@ const Experience = () => {
           {skills.map((item, index) => (
             <div
               key={index}
-              className={`col-md-2 mx-md-4 my-md-3 mt-3 col-5 mx-2 skill-item d-flex flex-column justify-content-center align-items-center py-3 m-3 rounded border ${
+              className={`col-md-2 mx-md-4 my-md-3 mt-3 col-5 mx-2 skill-item d-flex flex-column justify-content-center align-items-center py-3 m-3 rounded border test ${
                 visibleSkills[index] ? "visible" : ""
               }`}
+              style={{
+                color: theme === "dark" ? "#ffffff" : "#000000",
+                backgroundColor: theme === "dark" ? "#2e2e2e" : "#ffffff",
+              }}
             >
               <div className="skill-image mb-2">
                 <img src={item.img} alt={item.skill} className="img-fluid" />

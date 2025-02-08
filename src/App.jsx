@@ -8,10 +8,12 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import ToggleButton from "./components/ToggleButton";
 import "./App.css";
+import ParticleBackground from "./components/ParticleBackground";
 
 function App() {
   return (
     <div className="container">
+      <ParticleBackground />
       <ToggleButton />
       <Navbar />
       <Hero />

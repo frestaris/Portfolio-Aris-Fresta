@@ -26,7 +26,7 @@ const AboutMe = () => {
           <div className="d-grid gap-2 flex">
             <div
               className={`content mt-2 ${
-                theme === "dark" ? "dark-mode" : "light-mode"
+                theme === "light" ? "bg-white" : "bg-dark"
               }`}
             >
               <i className="bi bi-award" style={{ fontSize: "30px" }}></i>
@@ -38,7 +38,7 @@ const AboutMe = () => {
             </div>
             <div
               className={`content mt-2 ${
-                theme === "dark" ? "dark-mode" : "light-mode"
+                theme === "light" ? "bg-white" : "bg-dark"
               }`}
             >
               <i
