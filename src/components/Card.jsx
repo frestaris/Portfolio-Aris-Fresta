@@ -80,7 +80,7 @@ const Card = ({ id, title, image, linkUrl, live, className, technologies }) => {
             theme === "dark" ? "dark-mode" : "light-mode"
           }`}
         >
-          <h2 className="d-block fs-4">
+          <h2 className="d-block fs-4 mb-4">
             {title}{" "}
             <OverlayTrigger placement="top" overlay={renderTooltip}>
               <a

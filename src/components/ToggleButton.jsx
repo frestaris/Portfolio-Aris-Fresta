@@ -18,8 +18,8 @@ function ToggleButton() {
       <label
         htmlFor="toggle"
         style={{
-          "--default-icon": `url(${moonIcon})`,
-          "--checked-icon": `url(${sunIcon})`,
+          "--default-icon": `url(${sunIcon})`,
+          "--checked-icon": `url(${moonIcon})`,
         }}
         className={theme === "light" ? "bg-white" : "bg-dark"}
       ></label>

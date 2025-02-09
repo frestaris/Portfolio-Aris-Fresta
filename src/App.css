@@ -8,3 +8,6 @@ body {
   z-index: 10;
   position: relative;
 }
+.card {
+  border-radius: 0;
+}
