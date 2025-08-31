@@ -17,6 +17,10 @@ import postman from "../assets/postman.png";
 import stripe from "../assets/stripe.png";
 import cloudinary from "../assets/cloudinary.png";
 import vercel from "../assets/Vercel.png";
+import figma from "../assets/figma.png";
+import mysql from "../assets/mysql.png";
+import postgres from "../assets/postgres.png";
+import python from "../assets/python.png";
 
 import "./Experience.css";
 
@@ -60,10 +64,14 @@ const Experience = () => {
     { skill: "React", img: reactjs },
     { skill: "Node.js", img: node },
     { skill: "Redux", img: redux },
+    { skill: "Figma", img: figma },
     { skill: "Tailwind", img: tailwind },
+    { skill: "Python", img: python },
     { skill: "Postman", img: postman },
     { skill: "Cloudinary", img: cloudinary },
     { skill: "Stripe", img: stripe },
+    { skill: "Postgres", img: postgres },
+    { skill: "Mysql", img: mysql },
     { skill: "Netlify", img: netlify },
     { skill: "Vercel", img: vercel },
     { skill: "Github", img: github },

@@ -21,11 +21,36 @@ import ask3 from "../assets/ask3.png";
 import restaurant1 from "../assets/restaurant-1.png";
 import restaurant2 from "../assets/restaurant-2.png";
 import restaurant3 from "../assets/restaurant-3.png";
+import quickpop1 from "../assets/quickpop-1.png";
+import quickpop2 from "../assets/quickpop-2.png";
+import quickpop3 from "../assets/quickpop-3.png";
 import "./Projects.css";
 
 const projectData = [
   {
     id: 1,
+    title: "Quick Pop",
+    live: "https://quick-pop.vercel.app/",
+    images: [quickpop1, quickpop2, quickpop3],
+    technologies: [
+      "Html",
+      "Tailwind CSS",
+      "Redux",
+      "PostgreSQL",
+      "Supabase",
+      "Google Cloud APIs",
+      "Geolocation",
+      "Express.js",
+      "React",
+      "Node.js",
+      "Stripe",
+      "Cloudinary",
+      "Bcrypt",
+      "Jsonwebtoken",
+    ],
+  },
+  {
+    id: 2,
     title: "Rental Car",
     linkUrl: "https://github.com/frestaris/Mern_Rental_Car",
     live: "https://mern-rental-car-frontend.vercel.app/",
@@ -45,7 +70,7 @@ const projectData = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "e-Commerce Plants",
     linkUrl:
       "https://github.com/frestaris/Full-stack-e-commerce--Plants-website--React",
@@ -66,7 +91,7 @@ const projectData = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Dentist Website",
     linkUrl: "https://github.com/frestaris/Dentist-Website",
     live: "https://dentist-website-frontend.vercel.app/",
@@ -81,7 +106,7 @@ const projectData = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "BudgetMate",
     linkUrl: "https://github.com/frestaris/budgetmate",
     live: "https://budgetmate-frontend.vercel.app/",
@@ -100,7 +125,7 @@ const projectData = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Restaurant Website",
     linkUrl: "https://github.com/frestaris/react-restaurant-app",
     live: "https://react-app-restaurant-website-sample.netlify.app/",
@@ -108,7 +133,7 @@ const projectData = [
     technologies: ["Html", "Ant Design", "Redux", "React"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Ask",
     linkUrl: "https://github.com/frestaris/ask",
     live: "https://ask-frontend-virid.vercel.app/",
@@ -127,7 +152,7 @@ const projectData = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "Gym Website",
     linkUrl: "https://github.com/frestaris/Gym-React",
     live: "https://brosgym.netlify.app/",
