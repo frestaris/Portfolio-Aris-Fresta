@@ -21,9 +21,9 @@ import ask3 from "../assets/ask3.png";
 import restaurant1 from "../assets/restaurant-1.png";
 import restaurant2 from "../assets/restaurant-2.png";
 import restaurant3 from "../assets/restaurant-3.png";
-import quickpop1 from "../assets/quickpop-1.png";
-import quickpop2 from "../assets/quickpop-2.png";
-import quickpop3 from "../assets/quickpop-3.png";
+import quickpop1 from "../assets/Quickpop-1.png";
+import quickpop2 from "../assets/Quickpop-2.png";
+import quickpop3 from "../assets/Quickpop-3.png";
 import "./Projects.css";
 
 const projectData = [
