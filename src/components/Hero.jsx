@@ -1,4 +1,4 @@
-import profile from "../assets/profile-pic.jpg";
+import profile from "../assets/profile-pic.png";
 import pdfFile from "../assets/Resume_ArisFresta_2025.pdf";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
